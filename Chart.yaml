@@ -1,0 +1,10 @@
+name: robotics
+version: 0.1
+description: Robotic automation stack
+keywords:
+- robotics
+- application
+maintainers:
+- name: Renze de Vries
+  email: info@oberasoftware.com
+engine: gotpl

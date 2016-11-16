@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: mqtt
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mqtt
+    spec:
+      containers:
+      - name: mqtt
+        image: renarj/mqtt:latest
+        ports:
+        - containerPort: 1883
+        imagePullPolicy: Always
